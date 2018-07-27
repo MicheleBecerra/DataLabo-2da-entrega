@@ -1,19 +1,32 @@
+describe('getData', () => {
+  const url = 'https://raw.githubusercontent.com/Laboratoria/cdmx-2018-06-bc-core-am-data-dashboard/master/data/laboratoria.json';
+  it('debería ser una función', () => {
+    assert.isFunction(global.getData)
+  });
+  it('debería return una promesa (object)', () => {
+    assert.equal(typeof global.getData(url), 'object');
+  });
+});
+
 describe('data', () => {
+  it('debería global ser un objeto', () => {
+    assert.equal(typeof global, 'object');
+  });
 
   it('debería exponer función computeStudentsStats en objeto global', () => {
-    assert.isFunction(computeStudentsStats);
+    assert.isFunction(global.computeStudentsStats);
   });
 
   it('debería exponer función computeGenerationsStats en objeto global', () => {
-    assert.isFunction(computeGenerationsStats);
+    assert.isFunction(global.computeGenerationsStats);
   });
 
   it('debería exponer función sortStudents en objeto global', () => {
-    assert.isFunction(sortStudents);
+    assert.isFunction(global.sortStudents);
   });
 
   it('debería exponer función filterStudents en objeto global', () => {
-    assert.isFunction(filterStudents);
+    assert.isFunction(global.filterStudents);
   });
 
   describe('computeStudentsStats(laboratoria)', () => {
@@ -21,7 +34,7 @@ describe('data', () => {
     const { laboratoria } = fixtures;
 
     it('debería retornar arreglo de students con propiedad campus y propiedad generation', () => {
-      const processed = computeStudentsStats(laboratoria);
+      const processed = global.computeStudentsStats(laboratoria);
 
       processed.forEach((student) => {
         assert.ok(student.hasOwnProperty('campus'));
