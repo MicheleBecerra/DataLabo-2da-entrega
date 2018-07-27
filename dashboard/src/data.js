@@ -1,49 +1,40 @@
-window.computeStudentsStats = (laboratoria) => {
-  // console.log('1' + laboratoria);
-  arregloEstudiantes = [];
-  let arrayEvento = event.target.id.split('-');
-  let result = ' ';
-  console.log(arrayEvento);
+const init = () => {
+  const url = 'https://raw.githubusercontent.com/Laboratoria/cdmx-2018-06-bc-core-am-data-dashboard/master/data/laboratoria.json';
+  global.getData(url).then((data) => {
+    // console.log(data);
+    render(data);
+  });
+} 
 
+window.global = {
+  // Se genera una función y dentro de ella una constante con la url del JSON para llamarlo con el método fech.
+  getData: (url) => {
+    return fetch(url).then(respuesta => respuesta.json());
+  },
+  computeStudentsStats: (laboratoria) => {
+    const newArray = [];
+    for (let key in laboratoria) {
+      laboratoria[key].generacion;
+      for (let generaciones in laboratoria[key].generacion) {
+        laboratoria[key].generacion[generaciones].estudiantes.forEach(element => {
+          const objStudent = {
+            name: element.nombre,
+            email: element.correo,
+            campus: key,
+            generation: generaciones,
+            stats: {
 
-  let sedesLaboratoria = Object.keys(laboratoria);
-  // console.log('2' + sedesLaboratoria);
-  for (let i = 0; i < sedesLaboratoria.length; i ++) {
-    let campusLabo = sedesLaboratoria [i];
-    // console.log('3' + sedesLaboratoria [i]);
-    let generacionLab = Object.keys(laboratoria[sedesLaboratoria[i]].generacion);
-    for (let j = 0; j < generacionLab.length; j ++) {
-      let generations = generacionLab [j];
-      // console.log('4' + generacionLab);
-      let estudiantesLabo = laboratoria[sedesLaboratoria[i]].generacion[generacionLab[j]].estudiantes;
-      // console.log('5' + estudiantesLabo);
-      for (estudiantes of estudiantesLabo) {
-        // console.log(estudiantes.nombre);
+            }
+
+          };
+          newArray.push(objStudent);
+        });
       }
-      result = result + `
-            <th scope="col"> ${estudiantes.nombre}</th>
-            <th scope="col"> ${estudiantes.correo}</th>
-            <th scope="col"> ${estudiantes.turno}</th>
-            <th scope="col"> ${estudiantes.porcentajeCompletado}%</th>
-            </tr>
-                `;
-      document.getElementById('pintar').innerHTML = result;
-      document.getElementById('tabla').style.display = 'initial';
-       console.log(result);
-      
-
-
-      // let estudianteSede = estudiantesLabo.map(function(object) {
-      // return objtEstudiantes = {
-      // name: 'nombre.value',
-      // email: 'email.value',
-      // campus: campusLabo,
-      // generation: generacionLab
-      // };
-      // }
-      
-      // );
-      // console.log(estudianteSede);
-    };
-  }
+    }    
+    return newArray;
+  },
+  computeGenerationsStats: () => {},
+  sortStudents: () => {},
+  filterStudents: () => {}
 };
+window.onload = init;
