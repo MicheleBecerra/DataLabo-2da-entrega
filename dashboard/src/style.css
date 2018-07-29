@@ -15,38 +15,36 @@ header{
 
 nav{
   display: inline-block;
+  padding: 2% 0 0;
 }
 
 
 #Contenido{
-  width: 700px;
+  width:700px;
+  height: 1334px;
+  margin-right: 20px;
+  margin-left: 20px;
   float: right;
-  margin-top: 10px;
-  margin-left: 10px;
-  margin-bottom: 10px;
+  margin-top: 20px;
   background-color: aqua;
 }
 
-#tabla {
-  width: 70em;
-  height: 50em;
-  margin-top: 1em;
-  margin-right: 1em;
-  margin-bottom: 1em;
-  border: 1em;
-  display:table-row;
-  display: none;
+aside{
+  margin-top: 20px; 
+  height: 1334px;
+  background-color: #56F89A;
+  float: left;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
-aside{
-  height: 1334px;
-  background: green;
-  margin-top: 10px;
-  float: left;
-}
 
 img-thumbnail{
-  text-align: center;
+  margin-top: 40px;
+}
+
+.text-center{
+  margin-top: 20px;
 }
 
 aside h2{

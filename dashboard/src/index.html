@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 
 <head>
   <meta charset="utf-8">
   <title>Data Dashboard</title>
-  
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -26,7 +28,7 @@
               <a class="dropdown-item" href="#" id="lima-tercera">3ra Generación</a>
             </div>
           </li>
-          
+
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sede Santiago</a>
             <div class="dropdown-menu">
@@ -35,7 +37,7 @@
               <a class="dropdown-item" href="#" id="santiago-tercera">3ra Generación</a>
             </div>
           </li>
-          
+
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Sede México</a>
             <div class="dropdown-menu">
@@ -45,44 +47,38 @@
             </div>
           </li>
         </ul>
-        </nav>
+      </nav>
     </section>
-    
-  <main id="Contenido">
-      <div class="container">
-          <p id="titulo-sede-generacion"> </p>
-        <div class="row">
-          <table id="tabla" class="table table-bordered col-md-8 offset-md-2">
-            <thead class="thead">
-              <tr>
-                <th scope="col">Nombre</th>
-                <th scope="col">Correo</th>
-                <th scope="col">Turno</th>
-                <th scope="col"> % Completado</th>
-              </tr>
-            </thead>
-            <tbody id="pintar"></tbody>
-          </table>
-        </div>
-        </div>
-  </main>
-  <aside>
-    <img src="img/perfil.PNG" alt="fotoperfil" class="img-thumbnail">
-    <h2>Publicidad</h2>
-  </aside>
-  <div id=root></div>
 
-  <footer>
-    <h2>Pie-Pagina</h2>
-  </footer>
+    <main id="Contenido">
+        <div id="root-1"></div>
+        <div id="root-2"></div>
+    </main>
+
+    <aside>
+      <div class="text-center">
+        <img src="img/perfil.PNG" alt="fotoperfil" class="img-thumbnail">
       </div>
-  
+      <h5 class="text-center">
+        Lucile Baratier 
+      </h5>
+    </aside>
+    
+
+    <footer>
+      <h2>Pie-Pagina</h2>
+    </footer>
+  </div>
+
 
   <script src="data.js"></script>
   <script src="main.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
