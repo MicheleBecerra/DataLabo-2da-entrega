@@ -12,9 +12,13 @@ window.global = {
   // Se genera una función y dentro de ella una constante con la url del JSON para llamarlo con el método fech.
   getData: (url) => {
     // console.log("2.4" + getData);
+    
+    
     return fetch(url).then(respuesta => respuesta.json());
-    // console.log("2.4" + respuesta.json());   
+    // console.log("2.4" + respuesta.json()); 
+    console.log(respuesta.json);  
   }, 
+  
   computeStudentsStats: (laboratoria) => {
     // console.log('2.5' + laboratoria);
     // console.log("2.4" + getData);
