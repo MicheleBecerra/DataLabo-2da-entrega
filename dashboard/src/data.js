@@ -1,5 +1,5 @@
 const init = () => {
-  const url = 'https://raw.githubusercontent.com/RocioMatias05/DataLabo-2da-entrega/master/dashboard/data/laboratoria.json';
+  const url = 'https://raw.githubusercontent.com/Laboratoria/cdmx-2018-06-bc-core-am-data-dashboard/master/data/laboratoria.json';
   global.getData(url).then((data) => {
     // console.log("2.1" + data);
     render(data);
