@@ -20,22 +20,20 @@ nav{
 
 
 #Contenido{
-  width:700px;
+  width:75%;
   height: 1334px;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: 2%;
   float: right;
   margin-top: 20px;
-  background-color: aqua;
 }
 
 aside{
   margin-top: 20px; 
   height: 1334px;
-  background-color: #56F89A;
+  background-color: #FFE521;
   float: left;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-left: 2%;
+  width: 20%;
 }
 
 
@@ -63,4 +61,20 @@ footer h2{
   text-align: center;
   padding: 20px;
   font-size: italic;
+}
+
+#tabla {
+  width: 70em;
+  height: 50em;
+  margin-top: 1em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  border: 1em;
+  display:table-row;
+  display: none;
+}
+
+.thead{
+  background-color: #FFE521;
+  text-align: center;
 }
