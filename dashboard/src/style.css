@@ -50,6 +50,10 @@ footer h2{
   padding: 20px;
   font-size: italic;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> upstream/master
 #tabla {
   width: 70em;
   height: 50em;
@@ -60,6 +64,7 @@ footer h2{
   display:table-row;
   display: none;
 }
+<<<<<<< HEAD
 .thead{
   background-color: #FFE521;
   text-align: center;
@@ -78,4 +83,10 @@ footer h2{
 }
 h1 {
   text-align: center;
+=======
+
+.thead{
+  background-color: #FFE521;
+  text-align: center;
+>>>>>>> upstream/master
 }

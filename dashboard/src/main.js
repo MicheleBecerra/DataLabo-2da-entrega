@@ -58,7 +58,7 @@ const structurCard1 = (campus, generation, average, count) => {
                             <p>${average}</p>
                             <p>${count}</p>
                           </div>`;
-  // return plantillaCard1;
+  //  return plantillaCard1;
 };
 // console.log("1.8" + structurCard )
 // let plantillaGen;
@@ -78,7 +78,7 @@ const filterStudents = (objGenration, objStudent, generation, campus) => {
   });
 
   // console.log(genByCampus);
-  // console.log(studentByCampus);
+  console.log(studentByCampus);
   // console.log(studentsByGen);
   let result = '';
   let msj = '';
