@@ -1,9 +1,8 @@
 var config = {
-  apiKey: 'AIzaSyB_t2HoAm4KGcd-QrohjhWcJRi1bVfFQqo',
-  authDomain: 'laboratoria-datadashboard.firebaseapp.com',
-  databaseURL: 'https://laboratoria-datadashboard.firebaseio.com',
-  projectId: 'laboratoria-datadashboard',
-  storageBucket: 'laboratoria-datadashboard.appspot.com',
-  messagingSenderId: '467938788858'
+  apiKey: "AIzaSyDt-C8GTXUsxvj_NfW4zgkirrnKNCk2CD8",
+  authDomain: "laboratoria-datadashboar-26eed.firebaseapp.com",
+  databaseURL: "https://laboratoria-datadashboar-26eed.firebaseio.com",
+  projectId: "laboratoria-datadashboar-26eed",
+  storageBucket: "laboratoria-datadashboar-26eed.appspot.com",
+  messagingSenderId: "136995045169"
 };
-firebase.initializeApp(config);
