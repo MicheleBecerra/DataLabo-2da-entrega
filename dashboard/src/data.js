@@ -69,14 +69,7 @@ window.global = {
           count: countGeneration,
           average: averageGeneration
         };
-        generationsArray.push(objGenerations);
-      
-      //   console.log(key);
-      //   console.log(generations);
-      //   console.log(countGeneration);
-      //   console.log(sumPercentage); 
-      //   console.log(averageGeneration); 
-      //   console.log(generationsArray); 
+        generationsArray.push(objGenerations); 
       }
     }
     // console.log(generationsArray);
