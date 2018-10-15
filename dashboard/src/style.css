@@ -2,65 +2,81 @@
   margin: 0px;
   padding: 0px;
 }
-
 body {
   font-family: 'Open Sans', sans-serif;
 }
-
 header{
   height: 100px;
   text-align: center;
   padding: 2% 0 0;
 }
-
 nav{
   display: inline-block;
   padding: 2% 0 0;
 }
-
-
 #Contenido{
-  width:700px;
+  width:75%;
   height: 1334px;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: 2%;
   float: right;
   margin-top: 20px;
-  background-color: aqua;
 }
-
 aside{
   margin-top: 20px; 
   height: 1334px;
-  background-color: #56F89A;
+  background-color: #FFE521;
   float: left;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-left: 2%;
+  width: 20%;
 }
-
-
 img-thumbnail{
   margin-top: 40px;
 }
-
 .text-center{
   margin-top: 20px;
 }
-
 aside h2{
   font-size: 40px;
   text-align: center;
   line-height: 500px;
 }
-
 footer{
   background: #000000;
   clear:both;
 }
-
 footer h2{
   font-size: 40px;
   text-align: center;
   padding: 20px;
   font-size: italic;
+}
+
+#tabla {
+  width: 70em;
+  height: 50em;
+  margin-top: 1em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  border: 1em;
+  display:table-row;
+  display: none;
+}
+.thead{
+  background-color: #FFE521;
+  text-align: center;
+}
+#card {
+  width: 200px;
+  height: 100px;
+  display: inline-flex;
+  margin: 0.5rem;
+  background-color: #FF009A;
+  color: #000000;
+  text-align: center;
+}
+.info {
+  margin: 0 auto;
+}
+h1 {
+  text-align: center;
 }

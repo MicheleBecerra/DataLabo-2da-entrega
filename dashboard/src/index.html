@@ -18,32 +18,33 @@
       <img src="img/labo.png" class="img-fluid" alt="Responsive image">
     </header>
     <section>
-      <nav class="offset-md-3">
+      <nav class="offset-md-4">
         <ul class="nav">
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sede Lima</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#" id="lima-cuarta">4ta Generación</a>
-              <a class="dropdown-item" href="#" id="lima-quinta">5ta Generación</a>
-              <a class="dropdown-item" href="#" id="lima-tercera">3ra Generación</a>
+            <div class="dropdown-menu select">
+              <a class="dropdown-item" href="#" data-campus="lima" data-gen="cuarta">4ta Generación</a>
+              <a class="dropdown-item" href="#" data-campus="lima" data-gen="quinta">5ta Generación</a>
+              <a class="dropdown-item" href="#" data-campus="lima" data-gen="tercera">3ra Generación</a>
+              <!--a class="dropdown-item" href="#" data-campus="lima" data-gen="total-lima">Total Alumnas por Generación</a-->
             </div>
           </li>
 
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sede Santiago</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#" id="santiago-cuarta">4ta Generación</a>
-              <a class="dropdown-item" href="#" id="santiago-quinta">5ta Generación</a>
-              <a class="dropdown-item" href="#" id="santiago-tercera">3ra Generación</a>
+            <div class="dropdown-menu select">
+              <a class="dropdown-item" href="#" data-campus="santiago" data-gen="cuarta">4ta Generación</a>
+              <a class="dropdown-item" href="#" data-campus="santiago" data-gen="quinta">5ta Generación</a>
+              <a class="dropdown-item" href="#" data-campus="santiago" data-gen="tercera">3ra Generación</a>
             </div>
           </li>
 
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Sede México</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#" id="mexico-cuarta">4ta Generación</a>
-              <a class="dropdown-item" href="#" id="mexico-quinta">5ta Generación</a>
-              <a class="dropdown-item" href="#" id="mexico-tercera">3ra Generación</a>
+            <div class="dropdown-menu select">
+              <a class="dropdown-item" href="#" data-campus="mexico" data-gen="cuarta">4ta Generación</a>
+              <a class="dropdown-item" href="#" data-campus="mexico" data-gen="quinta">5ta Generación</a>
+              <a class="dropdown-item" href="#" data-campus="mexico" data-gen="tercera">3ra Generación</a>
             </div>
           </li>
         </ul>
@@ -51,11 +52,26 @@
     </section>
 
     <main id="Contenido">
-        <div id="root-1"></div>
-        <div id="root-2"></div>
+        <!--<div id="root-1"></div>
+        <div id="root-2"></div>-->
+        <div id="resultados"></div>
+        
+        <div id="row">
+          <table id="tabla" class="table table-bordered offset-md-1">
+            <thead class="thead">
+              <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">Correo</th>
+                <th scope="col">Campus</th>
+                <th scope="col">Generación</th>
+              </tr>
+            </thead>
+            <tbody id="estudiantes"></tbody>
+          </table>
+        </div>
     </main>
 
-    <aside>
+    <aside class="perfil">
       <div class="text-center">
         <img src="img/perfil.PNG" alt="fotoperfil" class="img-thumbnail">
       </div>
@@ -65,8 +81,8 @@
     </aside>
     
 
-    <footer>
-      <h2>Pie-Pagina</h2>
+    <footer class="row">
+      
     </footer>
   </div>
 
@@ -82,3 +98,5 @@
 </body>
 
 </html>
+
+

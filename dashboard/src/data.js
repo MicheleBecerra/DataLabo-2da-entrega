@@ -7,18 +7,25 @@ const init = () => {
     // console.log("2.3" + url);
   });
 }; 
+
 window.global = { 
   // Se genera una función y dentro de ella una constante con la url del JSON para llamarlo con el método fech.
   getData: (url) => {
     // console.log("2.4" + getData);
+    
+    
     return fetch(url).then(respuesta => respuesta.json());
-    // console.log("2.4" + respuesta.json());   
+    // console.log("2.4" + respuesta.json()); 
+    console.log(respuesta.json);  
   }, 
+  
   computeStudentsStats: (laboratoria) => {
-  // console.log("2.5" + laboratoria);
+    // console.log('2.5' + laboratoria);
     // console.log("2.4" + getData);
     const newArray = [];  
     // console.log("2.6" + newArray)
+    // console.log(laboratoria);
+
     for (let key in laboratoria) {
       // console.log("2.7" + key)  
       laboratoria[key].generacion;
@@ -31,7 +38,6 @@ window.global = {
             campus: key,
             generation: generaciones,
             stats: {
-              
             }            
           // console.log("3.0" + (objStudent)) 
           };
@@ -40,10 +46,12 @@ window.global = {
         });
       }
     }
-    // console.log( newArray) 
+
+    // console.log(newArray); 
      
     return newArray;
   },
+
   computeGenerationsStats: (laboratoria) => {
     const generationsArray = []; 
     for (let key in laboratoria) {
@@ -61,17 +69,13 @@ window.global = {
           count: countGeneration,
           average: averageGeneration
         };
-        generationsArray.push(objGenerations);
-      
-        console.log(key);
-        console.log(generations);
-        console.log(countGeneration);
-        console.log(sumPercentage); 
-        console.log(averageGeneration); 
-      // console.log(generationsArray); 
+        generationsArray.push(objGenerations); 
       }
     }
+    // console.log(generationsArray);
+    
     return generationsArray;
+
   },
   sortStudents: (laboratoria) => {},
 
